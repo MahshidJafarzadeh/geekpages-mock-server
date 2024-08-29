@@ -4,9 +4,9 @@ import auth from "json-server-auth";
 
 const server = express();
 
-// تنظیمات CORS با هدرهای مشخص
+
 server.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*'); // یا دامنه‌ی خاص خود را به جای * قرار دهید
+    res.header('Access-Control-Allow-Origin', '*'); 
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     
